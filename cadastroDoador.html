@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Ginga</title>
+
+        <style>
+            body{
+                background-color: #FDFBF7;
+                color: #212529;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th><a href="index.html">Ginga</a></th>
+                <th><a href="projetos.html">Projetos</a></th>
+                <th><a href="cadastroDoador.html">Cadastro de Doadores</a></th>
+                <th><a href="cadastroVoluntario.html">Cadastro de Voluntários</a></th>
+            </tr>
+        </table>
+
+        <div class="form-container">
+            <h2>Cadastro de Doador</h2>
+            <p class="subtitle">Preencha todos os campos.</p>
+            
+            <hr>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome :</label>
+                    <input type="text" id="nome" placeholder="Nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" placeholder="E-mail Válido.">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone :</label>
+                    <input type="tel" id="telefone" placeholder="(99) 99999-9999">
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Projeto :</label>
+                    <select id="assunto">
+                        <option value="" disabled selected></option>
+                        <option value="patinacao">Patinação</option>
+                        <option value="musica_danca">Música & Dança</option>
+                        <option value="tecnologia_desenvolvimento">Tecnologia & Desenvolvimento</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem :</label>
+                    <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+                </div>
+
+                <div class="form-group btn-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+
+</html>
