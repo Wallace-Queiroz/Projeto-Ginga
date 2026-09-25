@@ -1,0 +1,33 @@
+body{
+    background-color: #FDFBF7;
+    color: #212529;
+}
+
+.menu{
+    background-color: #F2A900;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.font-menu{
+    color: #4A3525;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+}
+
+.font-menu:hover {
+    background-color: #9b6d01;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.tiulo{
+    color: #4A3525 ;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
