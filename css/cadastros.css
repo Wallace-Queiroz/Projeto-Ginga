@@ -1,0 +1,129 @@
+/* Estilo geral para centralizar o formulário na tela */
+.menu{
+    background-color: #F2A900;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.font-menu{
+    color: #4A3525;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+}
+
+/*.font-menu:hover {
+    background-color: #9b6d01;
+    padding: 8px 25px;
+    border-radius: 5px;
+}*/
+
+body {
+    background-color: #4A3525;
+    margin: 0;
+    min-height: 100vh; /* ocupa a altura inteira da tela */
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+}
+
+/* Caixa principal do formulário */
+.form-container {
+    background-color: #F2A900; 
+    padding: 30px 40px;
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 450px;
+    color: white;
+}
+
+/* Títulos e textos */
+.form-container h2 {
+    text-align: center;
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px black; /* Sombra no texto idêntica ao modelo */
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 12px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Linha divisória preta */
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin-bottom: 25px;
+}
+
+/* Agrupamento de Label e Input */
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+/* Textos antes dos campos */
+label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 8px; /* Alinha o rótulo ao meio do input */
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Campos de preenchimento (Inputs, Select e Textarea) */
+input, select, textarea {
+    flex: 1; /* Faz o campo ocupar todo o espaço restante */
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #F5E0B7; /* Cor bege claro (areia) */
+    font-size: 13px;
+    color: #555;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2); /* Sombra interna sutil */
+}
+
+/* Comportamento específico da caixa de mensagem */
+textarea {
+    height: 80px;
+    resize: none; /* Impede que o usuário redimensione a caixa */
+}
+
+/* Estilizando o Placeholder (Texto fantasma) para cinza claro */
+::placeholder {
+    color: #999;
+}
+
+/* Posicionamento do botão "Enviar" */
+.btn-group {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 110px; /* Empurra o botão para alinhar com os inputs */
+    margin-top: 5px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333; /* Efeito hover opcional para usabilidade */
+}
