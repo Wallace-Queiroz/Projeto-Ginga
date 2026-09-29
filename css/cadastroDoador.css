@@ -43,12 +43,11 @@ body {
     background-color: #9b6d01;
 }
 
-
 /* Caixa principal do formulário */
 .form-container {
-    background-color: #F2A900; 
+    background-color: #F2A900;
     padding: 30px 40px;
-    border-radius: 15px; /* Bordas arredondadas */
+    border-radius: 15px;
     margin: 0 auto 36px;
     max-width: 1000px;
     width: 100%;
@@ -60,7 +59,7 @@ body {
     text-align: center;
     margin: 0 0 5px 0;
     font-size: 24px;
-    text-shadow: 2px 2px 2px black; /* Sombra no texto idêntica ao modelo */
+    text-shadow: 2px 2px 2px black;
 }
 
 .subtitle {
@@ -71,21 +70,20 @@ body {
     text-shadow: 1px 1px 2px black;
 }
 
-/* Linha divisória preta */
+/* Linha divisória */
 hr {
     border: none;
     border-top: 2px solid black;
     margin-bottom: 25px;
 }
 
-/* Agrupamento de Label e Input */
+/* Agrupamento de rótulo e campo */
 .form-group {
     display: flex;
     align-items: flex-start;
     margin-bottom: 15px;
 }
 
-/* Textos antes dos campos */
 label {
     flex: 0 0 100px;
     width: 100px;
@@ -94,40 +92,36 @@ label {
     margin-right: 10px;
     font-weight: bold;
     font-size: 13px;
-    margin-top: 8px; /* Alinha o rótulo ao meio do input */
+    margin-top: 8px;
     text-shadow: 1px 1px 1px black;
 }
 
-/* Campos de preenchimento (Inputs, Select e Textarea) */
 input, select, textarea {
-    flex: 1; /* Faz o campo ocupar todo o espaço restante */
+    flex: 1;
     min-width: 0;
     box-sizing: border-box;
     padding: 8px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #F5E0B7; /* Cor bege claro (areia) */
+    background-color: #F5E0B7;
     font-size: 13px;
     color: #555;
-    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2); /* Sombra interna sutil */
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-/* Comportamento específico da caixa de mensagem */
 textarea {
     height: 80px;
-    resize: none; /* Impede que o usuário redimensione a caixa */
+    resize: none;
 }
 
-/* Estilizando o Placeholder (Texto fantasma) para cinza claro */
 ::placeholder {
     color: #999;
 }
 
-/* Posicionamento do botão "Enviar" */
 .btn-group {
     display: flex;
     justify-content: flex-start;
-    padding-left: 110px; /* Empurra o botão para alinhar com os inputs */
+    padding-left: 110px;
     margin-top: 5px;
 }
 
@@ -143,7 +137,7 @@ button {
 }
 
 button:hover {
-    background-color: #4d2e17; /* Efeito hover opcional para usabilidade */
+    background-color: #4d2e17;
 }
 
 .rodape {

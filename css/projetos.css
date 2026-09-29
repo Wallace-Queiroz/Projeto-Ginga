@@ -48,27 +48,17 @@ body {
     margin: 10px auto 28px;
     max-width: 1000px;
     text-align: center;
-}
-
-.tiulo h1 {
-    font-size: 36px;
-    line-height: 1.2;
-    margin: 0 0 8px;
     text-shadow: 2px 2px 2px black;
 }
 
-.tiulo p {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    text-shadow: 1px 1px 2px black;
+h1.tiulo {
+    font-size: 36px;
+    line-height: 1.2;
 }
 
-.QuemSomos,
-.NossoProposito,
-.ComoAtuamos,
-.pilares {
-    background-color: #F2A900;
+.CaixaEsporte,
+.CaixaArte,
+.CaixaTecnologia {
     border-radius: 15px;
     color: #FDFBF7;
     margin: 0 auto 24px;
@@ -77,45 +67,52 @@ body {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
-.QuemSomos,
-.NossoProposito,
-.ComoAtuamos {
-    align-items: center;
-    display: grid;
-    gap: 24px;
-    grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
+.CaixaEsporte {
+    background-color: #0088CC;
 }
 
-.NossoProposito {
-    grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+.CaixaArte {
+    background-color: #D9534F;
 }
 
-.NossoProposito .imagem-secao {
-    grid-column: 1;
-    grid-row: 1;
+.CaixaTecnologia {
+    background-color: #2E8B57;
 }
 
-.NossoProposito .texto-secao {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.QuemSomos h2,
-.NossoProposito h2,
-.ComoAtuamos h2,
-.pilares h2 {
+.CaixaEsporte h2,
+.CaixaArte h2,
+.CaixaTecnologia h2,
+.CaixaEsporte h3,
+.CaixaArte h3,
+.CaixaTecnologia h3 {
     color: #FDFBF7;
     margin-top: 0;
     text-shadow: 2px 2px 2px black;
 }
 
-.QuemSomos p,
-.NossoProposito p,
-.ComoAtuamos p {
-    margin: 0;
+.projeto-layout {
+    align-items: start;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
 }
 
-.imagem-secao {
+.titulo-projeto {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.imagem-projeto {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.texto-projeto {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.imagem-projeto {
     aspect-ratio: 4 / 3;
     background-color: #4A3525;
     border-radius: 8px;
@@ -124,55 +121,40 @@ body {
     width: 100%;
 }
 
-.imagem-secao img {
+.imagem-projeto img {
     display: block;
     height: 100%;
     object-fit: cover;
     width: 100%;
 }
 
-.pilares {
-    overflow-x: auto;
+.CaixaEsporte p,
+.CaixaArte p,
+.CaixaTecnologia p {
+    margin: 0 0 14px;
 }
 
-.lista-pilares {
-    display: grid;
-    gap: 18px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.CaixaEsporte a,
+.CaixaArte a,
+.CaixaTecnologia a {
+    background-color: #F2A900;
+    border-radius: 5px;
+    color: #4A3525;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 4px 10px 0 0;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
-.pilar-esporte,
-.pilar-arte,
-.pilar-tecnologia {
-    border-radius: 10px;
-    padding: 18px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
-}
-
-.pilar-esporte {
-    background-color: #0088CC;
-}
-
-.pilar-arte {
-    background-color: #D9534F;
-}
-
-.pilar-tecnologia {
-    background-color: #2E8B57;
-}
-
-.pilar-esporte h3,
-.pilar-arte h3,
-.pilar-tecnologia h3 {
-    color: #F2A900;
-    margin: 0 0 10px;
-}
-
-.pilar-esporte p,
-.pilar-arte p,
-.pilar-tecnologia p {
-    color: #FDFBF7;
-    margin: 0;
+.CaixaEsporte a:hover,
+.CaixaArte a:hover,
+.CaixaTecnologia a:hover,
+.CaixaEsporte a:focus-visible,
+.CaixaArte a:focus-visible,
+.CaixaTecnologia a:focus-visible {
+    background-color: #d99800;
 }
 
 .rodape {
@@ -255,29 +237,43 @@ body {
         padding: 6px 8px;
     }
 
-    .tiulo h1 {
+    h1.tiulo {
         font-size: 28px;
     }
 
-    .QuemSomos,
-    .NossoProposito,
-    .ComoAtuamos {
-        grid-template-columns: 1fr;
+    .CaixaEsporte,
+    .CaixaArte,
+    .CaixaTecnologia {
         padding: 20px;
     }
 
-    .NossoProposito .imagem-secao,
-    .NossoProposito .texto-secao {
+    .projeto-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-projeto,
+    .texto-projeto {
         grid-column: auto;
         grid-row: auto;
     }
 
-    .pilares {
-        padding: 20px;
+    .titulo-projeto {
+        grid-column: 1;
+        grid-row: 1;
     }
 
-    .lista-pilares {
-        grid-template-columns: 1fr;
+    .imagem-projeto {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .texto-projeto {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .imagem-projeto {
+        max-width: 360px;
     }
 
     .rodape-conteudo {
@@ -290,9 +286,5 @@ body {
 
     .rodape-creditos {
         grid-column: auto;
-    }
-
-    .imagem-secao {
-        max-width: 360px;
     }
 }
