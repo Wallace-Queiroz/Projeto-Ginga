@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projeto Ginga</title>
+        <title>Projeto Ginga | Cadastro de Doador</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,32 +30,32 @@
             <form action="#" method="POST">
                 <div class="form-group">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" placeholder="Nome completo">
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required autocomplete="name">
                 </div>
 
                 <div class="form-group">
-                        <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="E-mail Válido.">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail válido." required autocomplete="email">
                 </div>
 
                 <div class="form-group">
-                        <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" placeholder="(99) 99999-9999">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required autocomplete="tel">
                 </div>
 
                 <div class="form-group">
-                        <label for="assunto">Projeto:</label>
-                    <select id="assunto">
-                        <option value="" disabled selected></option>
+                    <label for="assunto">Projeto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione um projeto</option>
                         <option value="patinacao">Patinação</option>
-                        <option value="musica_danca">Música & Dança</option>
-                        <option value="tecnologia_desenvolvimento">Tecnologia & Desenvolvimento</option>
+                        <option value="musica_danca">Música &amp; Dança</option>
+                        <option value="tecnologia_desenvolvimento">Tecnologia &amp; Desenvolvimento</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
                 </div>
 
                 <div class="form-group btn-group">

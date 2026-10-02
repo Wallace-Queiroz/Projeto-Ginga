@@ -43,7 +43,7 @@ body {
     background-color: #9b6d01;
 }
 
-.tiulo {
+.titulo {
     color: #FDFBF7;
     margin: 10px auto 28px;
     max-width: 1000px;
@@ -51,7 +51,7 @@ body {
     text-shadow: 2px 2px 2px black;
 }
 
-h1.tiulo {
+h1.titulo {
     font-size: 36px;
     line-height: 1.2;
 }
@@ -237,7 +237,7 @@ h1.tiulo {
         padding: 6px 8px;
     }
 
-    h1.tiulo {
+    h1.titulo {
         font-size: 28px;
     }
 
